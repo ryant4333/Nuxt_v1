@@ -4,17 +4,11 @@
     <NuxtLink to="/">Home Page</NuxtLink>
     <NuxtLink to="/about">About page</NuxtLink> 
 
-    <p>
-      This page is rendered on the <strong>{{ rendering }}</strong>
-    </p>
-    <p v-if="rendering === 'server'">
-      First load or hard refresh is done server side.
-    </p>
-    <p v-if="rendering === 'client'">
-      Navigation done on client side
-    </p>
+    <landing />
 
-    <NuxtLink to="/about">About Page</NuxtLink>
+    <hero />
+
+
   </main>
 </template>
 
